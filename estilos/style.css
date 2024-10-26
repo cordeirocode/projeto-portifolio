@@ -85,13 +85,13 @@ nav > a:hover {
 
 nav > span {
     background-color: #0062c4;
-
     text-align: center;
     color: black;
     font-size: 5em;
     width: 100vw;
     height: 50px;
     padding-top: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541);
 }
 
 nav > span:hover {
@@ -107,13 +107,13 @@ main {
 main > section > div.titulo {
     background-color: white;
     font-family: var(--font-h1);
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     width: 530px;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541)
 }
 
 main > section > div.modulos {
@@ -122,10 +122,10 @@ main > section > div.modulos {
     font-size: 1.2em;
     text-align: center;
     width: 530px;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin: 25px;
     border-radius: 10px;
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541)
 }
 
 footer {
