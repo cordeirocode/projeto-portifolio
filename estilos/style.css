@@ -25,7 +25,7 @@ Cores de Destaque: Azul Celeste (#87CEEB), Verde Floresta (#228B22)*/
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -47,10 +47,22 @@ header > h1 {
     text-align: center;
 }
 
+div.menu {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 nav {
-    background-color: rgb(83, 83, 83);
+    background-color: #89a6bf00;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center
 }
 
 nav > a {
@@ -59,9 +71,33 @@ nav > a {
     font-family: var(--font-h2);
     text-align: center;
     text-decoration: none;
-    padding: 5px;
-    margin-right: 5px;
+    width: 400px;
+    padding: 10px;
+    margin: 5px 0px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541);
+}
+
+nav > a:hover {
+    background-color: #0062c4;
+    transition: background-color 0.3s;
+}
+
+nav > span {
+    background-color: #0062c4;
+
+    text-align: center;
+    color: black;
+    font-size: 5em;
+    width: 100vw;
+    height: 50px;
+    padding-top: 15px;
+}
+
+nav > span:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
 }
 
 main {
@@ -110,3 +146,5 @@ footer > p > a {
 footer > p > a:hover {
     text-decoration: underline;
 }
+
+/* TESTE */
