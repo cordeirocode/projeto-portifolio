@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*H1: Playfair Display - Uma fonte serifada elegante e clássica, ideal para títulos principais.
+
+H2: Montserrat - Uma fonte sans-serif moderna e limpa, perfeita para subtítulos.
+
+P: Roboto - Uma fonte sans-serif amigável e fácil de ler, ótima para o corpo do texto.
+
+Paleta de Cores
+Cores Primárias: Branco (#FFFFFF), Azul Escuro (#003366)
+
+Cores Secundárias: Verde Claro (#A9D18E), Cinza Claro (#D5D8DC)
+
+Cores de Destaque: Azul Celeste (#87CEEB), Verde Floresta (#228B22)*/
+
+:root {
+    --primary-color: #003366;
+    --secondary-color: #A9D18E;
+    --font-header: 'Passion One', cursive;
+    --font-p: 'Roboto', sans-serif;
+    --font-h1: 'Playfair Display', serif;
+    --font-h2: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: none;
+}
+
+body {
+    background: url(../imagens/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: black;
+    height: 100px;
+}
+
+header > h1 {
+    font-family: var(--font-header);
+    font-size: 3em;
+    font-weight: bold;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(83, 83, 83);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav > a {
+    background-color: #003366;
+    color: white;
+    font-family: var(--font-h2);
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+main {
+    height: 90vh;
+}
+
+main > section > div.titulo {
+    background-color: white;
+    font-family: var(--font-h1);
+    font-size: 2em;
+    text-align: center;
+    width: 530px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+}
+
+main > section > div.modulos {
+    background-color: white;
+    font-family: var(--font-h2);
+    font-size: 1.2em;
+    text-align: center;
+    width: 530px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.486);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer > p > a:hover {
+    text-decoration: overline;
+}
