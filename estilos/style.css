@@ -29,19 +29,24 @@ Cores de Destaque: Azul Celeste (#87CEEB), Verde Floresta (#228B22)*/
 }
 
 body {
-    background: url(../imagens/background.jpg) no-repeat center center fixed;
-    background-size: cover;
+    background-image: linear-gradient(to bottom, #191A16, #748E8F);
 }
 
 header {
     background-color: black;
     height: 100px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
     font-family: var(--font-header);
     font-size: 3em;
     font-weight: bold;
+    text-align: center;
     padding-top: 30px;
     color: white;
     text-align: center;
@@ -110,8 +115,8 @@ main > section > div.titulo {
     font-size: 1.8em;
     text-align: center;
     width: 530px;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin: 25px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541)
 }
